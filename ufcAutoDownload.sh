@@ -4,7 +4,7 @@ date
 mv /home/osmc/scripts/ufc/currentmagnet.txt /home/osmc/scripts/ufc/previousmagnet.txt
 rm /home/osmc/scripts/ufc/tpb.txt
 #Download the URL
-curl --insecure https://thepiratebay.org/tag/ufc/0/3/0 > /home/osmc/scripts/ufc/tpb.txt
+curl --insecure https://thepiratebay.org/tag/ufc/0/0/0 > /home/osmc/scripts/ufc/tpb.txt
 
 #Extract the magnet links
 grep -o 'magnet:[^"]*' /home/osmc/scripts/ufc/tpb.txt > /home/osmc/scripts/ufc/currentmagnet.txt
