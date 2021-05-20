@@ -5,12 +5,19 @@ do
     case $opt in
         "No port scan after host discovery")
             nmap -sn 192.168.1.0/24
+		echo "##############################"
+		echo "##############################"	
             ;;
         "DNS Resolution")
             nmap -R 192.168.1.0/24
+		echo "#############################"
+		echo "#############################"
             ;;
         "Enables version detection")
             nmap -sV 192.168.1.0/24
+		echo "############################"
+		echo "############################"
+
             ;;
         "Quit")
             break
